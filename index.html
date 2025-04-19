@@ -15,31 +15,113 @@
         </h1>
     </header>
 
+    <!-- HTML-->
     <section class="mt-5 mx-5">
         <h2 class="display-5 text-warning">HTML</h2>
-        <h3 class="text-info fst-italic">¿Qué es HTML?</h3>
+        <h2 class="text-info fst-italic">¿Qué es HTML?</h2>
 
         <div class="fs-3 text-white">
             <p>
                 HTML o su nombre HyperText Markup Language (Lenguaje de Marcado de Hipertexto).
-                Es el lenguaje estándar que se usa para crear páginas web. No es un lenguaje de programación,
-                sino un lenguaje de marcado, porque su función principal es marcar el contenido para que los
-                navegadores web lo interpreten
+                Es el lenguaje estándar que se usa para crear páginas web.
             </p>
 
             <ul>
-                <li>HTML describe la estructura de una página web.</li>
+                <li> Es un lenguaje de marcado, no de programación:
+                    HTML no puede ejecutar lógica, realizar operaciones matemáticas,
+                    condiciones (if), bucles (for), ni manejar eventos de forma dinámica por sí solo.
+                <li>Define estructura, no estilo ni comportamiento:
+                    <ul>
+                        <li>Para aplicar estilos visuales, se utiliza CSS (Cascading Style Sheets).</li>
+                        <li>Para añadir comportamiento interactivo, se usa JavaScript.</li>
+                    </ul>
+
                 <li>Está compuesto por una serie de elementos o etiquetas.</li>
                 <li>Estos elementos le indican al navegador cómo mostrar el contenido.</li>
-                <li>Cada elemento de HTML puede etiquetar partes del contenido, por ejemplo: &lt;p&gt; &lt;div&gt; &lt;a&gt;.</li>
+                <li>HTML permite anidar elementos, es decir, incluir etiquetas dentro de otras:</li>
             </ul>
+            <div class="border rounded text-white p-3" style="background-color: black;">
+                <pre><code>&lt;p&gt;Visita &lt;a href="https://example.com">nuestro sitio &lt;/a&gt; &lt;/p&gt; </code></pre>
+            </div>
+
         </div>
 
-        <div class="py-2 text-white text-center"">
-        <h2 class="display-5 text-info"> HTML cheat sheet</h2>
-        <iframe src="html-cheat-sheet.pdf" width="100%" height="600px"></iframe>
+        <div class="py-2 text-white text-center">
+            <h2 class="display-5 text-info"> HTML cheat sheet</h2>
+            <iframe src="html-cheat-sheet.pdf" width="100%" height="600px"></iframe>
         </div>
-        
+    </section>
+
+    <!-- css-->
+    <section class="mt-5 mx-5">
+        <h2 class="display-5 text-warning">CSS</h2>
+        <h2 class="text-info fst-italic">¿Qué es CSS?</h2>
+        <div class="fs-3 text-white">
+            <p>
+                CSS significa Cascading Style Sheets (Hojas de Estilo en Cascada),
+                y es el lenguaje utilizado para describir la presentación visual de un documento HTML.
+                El término cascading se refiere a cómo CSS resuelve conflictos cuando varios estilos se
+                aplican al mismo elemento. Se basa en:</p>
+            <ul>
+                <li>La especificidad del selector.</li>
+                <li>El orden en que se aplican.</li>
+                <li>La importancia (por ejemplo, el uso de !important).</li>
+            </ul>
+            <p>En vez de escribir los estilos directamente en el archivo HTML,
+                se crean en un archivo aparte con extensión .css.
+                Luego se enlaza ese archivo al HTML con una etiqueta &lt;link&gt;.
+            </p>
+        </div>
+
+        <!--TABLA-->
+        <div>
+            <table class="table table-dark table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">VENTAJA</th>
+                        <th scope="col">EXPLICACION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">🧼Código más limpio y ordenado</th>
+                        <td>El HTML no se llena de estilos y se enfoca solo en la estructura del contenido.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">🔁Reutilización de estilos</th>
+                        <td>Un mismo archivo CSS puede aplicarse a muchas páginas (ahorra trabajo).</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">🧪Facilita el mantenimiento</th>
+                        <td>Si necesitás cambiar un color o fuente, lo hacés en un solo lugar.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">🚀Mejora el rendimiento</th>
+                        <td>El navegador puede guardar en caché el archivo CSS, cargando más rápido.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">🎯Fomenta buenas prácticas</th>
+                        <td>Separar estructura (HTML), estilo (CSS) y lógica (JS) es la base del desarrollo web
+                            profesional.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div >
+            <h2 class="text-warning fst-italic ">¿Por qué evitar CSS en línea o interno?</h2>
+            <div class="text-white">
+            <p>❌ CSS en línea (style="...") hace que el HTML se vea sucio y poco flexible.</p>
+            <p>⚠️ CSS interno (dentro de &lt;style&gt;) sirve solo para páginas pequeñas o pruebas rápidas.</p>
+            <p>✅ CSS externo es ideal para sitios reales y proyectos escalables.</p>
+            </div>
+            
+        </div>
+
+
+
+
+
 
     </section>
 
